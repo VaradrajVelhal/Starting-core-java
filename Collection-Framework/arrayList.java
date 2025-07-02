@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-class linkedList{
+class arrayList{
     public static void main(String[] args) {
         //Array list changes its size dynamically as elements are added
         //An array is resizable array implementatation od the list interface

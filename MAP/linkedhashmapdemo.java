@@ -19,5 +19,8 @@ public class linkedhashmapdemo {
         int res=map.getOrDefault("watermelon", 00);//it returns default value 
         //if given value is not present
         System.out.println(res);
+        map.putIfAbsent("banana", 585);//it will put the value to the key if value
+        //is absent
+        
     }
 }

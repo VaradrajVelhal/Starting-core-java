@@ -1,4 +1,4 @@
-//example of generic
+ //example of generic
 class Example<t> {
     t s;
    Example(t var1) {

@@ -1,7 +1,9 @@
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 import java.util.List;
 
 
@@ -41,6 +43,20 @@ public class TerminalOps {
         System.out.println("findAny()  "+any.get());
         System.out.println("findFirst()  "+list.stream().findFirst().get());
 
+        //7. toArray()
+        Object[] array = Stream.of(1,2,3).toArray();
+
+        //8. min/max
+        Optional<Integer> max = Stream.of(2,44,69).max((o1,o2) -> o1-o2);
+        Optional<Integer> min = Stream.of(2,44,69).min(Comparator.naturalOrder());
+
+        //9. forEachOrdered
+        List<Integer> nums1=Arrays.asList(1,2,3,4,5,6,7,8,9,10);
+        System.out.println("Using forEach with parallel stream....");
+        nums1.parallelStream().forEach(System.out::println);//Output :- Output will be in random order
+        System.out.println("Using 'forEachOrdered' with parallel stream");
+        nums1.parallelStream().forEachOrdered(System.out::println);//Output will be ordered
+
 
         //Example 1 : find the names with length 3
 
@@ -66,5 +82,12 @@ public class TerminalOps {
         // Stateful & Stateless operation
         
         //Stateful : The operation will know about other elements.
+        //Example 5:
+        //Stream cannot be reused after a terminal operational has been called
+        
+        Stream<String> stream=names.stream();
+        stream.forEach(System.out::println);
+        //List<String> list2=stream.map(String::toUpperCase).toList();// exception -> IllegalStateException
+
     }
 }

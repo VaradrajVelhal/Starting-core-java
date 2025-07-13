@@ -3,7 +3,7 @@ import java.util.LinkedList;
 
 public class linkedList {
     public static void main(String[] args) {
-         //linked list implemetns list interphace 
+         //linked list implemetns list interface 
          //unlike arraylist which uses dyanamic array to store the elements,
          //a linked list stores its element as nodes in a doublylinked linked list
          //syntax

@@ -10,7 +10,6 @@ public class stack {
        stack.push(2);
        stack.push(3);
        stack.push(4);
-       stack.push(5);
 
        //stack.pop;//its removes the last element in stack which was pushed ex.  4
        int showPopedElement=stack.pop();//it will return which element was poped.

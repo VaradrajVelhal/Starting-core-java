@@ -3,7 +3,7 @@ import java.util.ArrayList;
 class arrayList{
     public static void main(String[] args) {
         //Array list changes its size dynamically as elements are added
-        //An array is resizable array implementatation od the list interface
+        //An array is resizable array implementatation of the list interface
         //Syntax
         ArrayList <Integer> list=new ArrayList<>();
         list.add(1);//use add() to add elements

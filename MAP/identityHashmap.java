@@ -14,7 +14,7 @@ public class identityHashmap {
         //.equals() so both strings are considered diffrent 
         //the address is checked for equality isted of contents 
         System.out.println("key1 ADDRESS ->  " + System.identityHashCode(key1));
-        System.out.println("key1 ADDRESS ->  " + System.identityHashCode(key2));//both this will print diffrent address
+        System.out.println("key2 ADDRESS ->  " + System.identityHashCode(key2));//both this will print diffrent address
 
         
         //and this happens in hashmaps->

@@ -16,7 +16,7 @@ public class stringClasses {
         StringBuffer sb1=new StringBuffer();
         //String Buffer are thread safe
         //Mutable 
-        //Method chaining  
+        //Method chaining 
         
     
     }

@@ -12,8 +12,7 @@ public class GarbageCollection {
         //the answer is the value is taken care by JVM it ia removed to save space
 
         //ex. we remove things from our house that are not useful anymore
-
-         
+        
     }
 }
 class Phone{

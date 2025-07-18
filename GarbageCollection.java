@@ -9,7 +9,7 @@ public class GarbageCollection {
         System.out.println(phone);
         //now the phones value is null so it is not pointing towards anything
         // so where the value of the phone goes ????
-        //the answer is the value is taken care by JVM it ia removed to save space
+        //the answer is the value is taken care by JVM it is removed to save space
 
         //ex. we remove things from our house that are not useful anymore
         

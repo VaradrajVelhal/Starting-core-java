@@ -9,7 +9,7 @@ public class deque {
         //allows insertion and removal from both ends
         //versatile than regular queues and stacks because they support all the operation of both
         Deque<Integer> dq=new ArrayDeque<>();//faster iteration ,low memeory,no null allowed 
-        //no need to shift element if they are reoved because ArrayDeque uses circular array
+        //no need to shift element if they are removed because ArrayDeque uses circular array
 
         dq.addFirst(10);
         dq.addLast(20);

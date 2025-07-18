@@ -4,7 +4,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
 
 public class copyOnWriteArraylist {
     public static void main(String[] args) {
-        //as both arryalist and linked list are not thread safe we use COWAL
+        //as both arraylist and linked list are not thread safe we use COWAL
         //its used more when there are more read operation example
 
         CopyOnWriteArrayList<String> shopinglist=new CopyOnWriteArrayList<>();

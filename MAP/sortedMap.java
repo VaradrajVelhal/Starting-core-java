@@ -3,7 +3,7 @@ import java.util.TreeMap;
 
 public class sortedMap {
     public static void main(String[] args) {
-        //Sorted map is interface that extends Map and guarantees taht the entries are sorted 
+        //Sorted map is interface that extends Map and guarantees that the entries are sorted 
         //based on the keys , either in their natural ordering or by a specified comparator 
 
 

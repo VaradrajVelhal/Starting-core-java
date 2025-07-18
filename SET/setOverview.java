@@ -10,7 +10,7 @@ public class setOverview {
         //as Map had implementations --> HashMap, LinkedHashMap, Treemap, EnumMap
         //Set also has same --> HashSet, LinkedHashSet, TreeSet, EnumMap
 
-        //evrymethods and all is same as Map
+        //every methods and all are same as Map
 
         Set <Integer> set=new LinkedHashSet<>();//if you want ordered use linked hash set 
         //if you want sorted use treeSet

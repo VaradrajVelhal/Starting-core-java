@@ -17,7 +17,5 @@ public class stringClasses {
         //String Buffer are thread safe
         //Mutable 
         //Method chaining 
-        
-    
     }
 }

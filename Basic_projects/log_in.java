@@ -1,3 +1,4 @@
+//Here i coded log in screen
 import java.awt.event.*;
 import java.awt.*;
 import javax.swing.JButton;
@@ -64,6 +65,8 @@ public class log_in extends JFrame {
        b2.setCursor(c1);
        b3.setBounds(450, 500, 100, 30);
        b3.addActionListener(new auto() );
+       b1.addMouseListener(new MouseL());
+       b2.addMouseListener(new MouseL());
        
     }
     public static void main(String[] args) {
@@ -94,6 +97,35 @@ public class log_in extends JFrame {
             l4.setText("");
            }
         }
+    }
+    class MouseL implements MouseListener{
+
+        @Override
+        public void mouseClicked(MouseEvent e) {
+            
+        }
+
+        @Override
+        public void mousePressed(MouseEvent e) {
+             b1.setForeground(Color.BLACK);
+             b2.setForeground(Color.BLACK);
+        }
+
+        @Override
+        public void mouseReleased(MouseEvent e) {
+            b1.setForeground(Color.WHITE);
+            b2.setForeground(Color.WHITE);
+        }
+
+        @Override
+        public void mouseEntered(MouseEvent e) {
+           
+        }
+
+        @Override
+        public void mouseExited(MouseEvent e) {
+        }
+
     }
     class clear implements ActionListener {
 

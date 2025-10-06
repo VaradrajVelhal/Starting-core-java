@@ -6,7 +6,8 @@ public class Rec1 {
             return ;
         }
         System.out.println(n);
-        nums(n+1);
+        //This is called tail recursion
+        nums(n+1);//This is the last function call
     }
     public static void main(String[] args) {
         nums(0);

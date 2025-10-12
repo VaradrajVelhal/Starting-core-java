@@ -15,11 +15,13 @@ public class Program4 {
         System.out.println("Enter 3rd Number :- ");
         int n3 = sc.nextInt();
 
-        if (n1 > n2 && n1 > n3) {
+        if (n1 == n2 && n2 == n3) {
+            System.out.println("All numbers are equal....");
+        }else if (n1 > n2 && n1 > n3) {
             System.out.println(n1 + " is Largest....");
-        }else if (n2 > n1 && n2 > n3) {
+        }else if(n2 > n1 && n2 > n3){
             System.out.println(n2 + " is Largest....");
-        }else{
+        }else {
             System.out.println(n3 + " is Largest....");
         }
     }

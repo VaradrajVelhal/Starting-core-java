@@ -1,8 +1,13 @@
 //Write a Java program to count the number of vowels and consonants in a string.
+
+import java.util.Scanner;
+
 class Program8 {
     public static void main(String[] args) {
 
-        String str = "Hello World!";
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the String:- ");
+        String str = sc.nextLine();
         int vowels = 0;
         int consonants = 0;
         String lower = str.toLowerCase();

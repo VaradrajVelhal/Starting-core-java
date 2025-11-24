@@ -1,34 +1,26 @@
-class SharedObject {
-    private boolean flag = false;
+class MyThread extends Thread {
+    volatile boolean running = true;
 
-    public void setFlagTrue() {
-        flag = true;
-        System.out.println("Set the flag true....");
-    }
-
-    public void printFlagTrue() {
-        while (!flag) {
+    public void run() {
+        System.out.println("Thread started...");
+        while (running) {
 
         }
-        System.out.println("Flag is true now.");
+        System.out.println("Thread stopped!");
+    }
+
+    public void stopThread() {
+        running = false;
     }
 }
 
 public class VolatileDemo {
-    public static void main(String[] args) {
-        SharedObject s = new SharedObject();
-        Thread writerThread = new Thread(() -> {
-            try {
-                Thread.sleep(1000);
-            } catch (InterruptedException e) {
-                Thread.currentThread().interrupt();
-            }
-            s.setFlagTrue();
-        });
-        Thread readerThread = new Thread(() -> {
-            s.printFlagTrue();
-        });
-        writerThread.start();
-        readerThread.start();
+    public static void main(String[] args) throws InterruptedException {
+        MyThread t = new MyThread();
+        t.start();
+
+        Thread.sleep(1000);
+        System.out.println("Main thread is stopping the worker...");
+        t.stopThread();
     }
 }

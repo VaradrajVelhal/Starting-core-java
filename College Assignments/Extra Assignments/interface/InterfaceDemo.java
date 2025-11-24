@@ -26,6 +26,7 @@ class Smartphone implements Camera, Phone {
 }
 
 public class InterfaceDemo {
+
     public static void main(String[] args) {
         Smartphone s = new Smartphone();
         s.clickPhoto();

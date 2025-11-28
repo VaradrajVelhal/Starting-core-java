@@ -38,5 +38,16 @@ class Program7 {
             Apple a = (Apple) f;
             a.cut();
         }
+
+        // 3. THE RISK (ClassCastException)
+        System.out.println("Downcasting (Unsafe/Risk)");
+        try {
+            // Trying to cast an Apple object (held in 'f') into a Banana
+            Banana b = (Banana) f;
+            b.peel();
+        } catch (ClassCastException e) {
+            System.out.println("Error: You can't turn an Apple into a Banana!");
+            System.out.println("Exception: " + e);
+        }
     }
 }
